@@ -44,7 +44,7 @@
     <p class="text-gray-300 text-lg">I’m a self-taught developer who loves turning creative ideas into real products. I specialize in modern, responsive design and am always learning something new. My goal is to make the web more useful and beautiful, one site at a time.</p>
   </section>
 
-  <!-- Skills as Cards by Category -->
+<!-- Skills as Cards by Category -->
 <section id="skills" class="px-6 py-16 bg-black text-white">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold mb-8">Skills<span class="text-blue-400">_</span></h2>
@@ -95,10 +95,11 @@
     @apply bg-gray-900 rounded-lg p-5 flex items-center gap-4 shadow hover:shadow-lg transition;
   }
   .skill-card img {
-    @apply w-8 h-8;
+    @apply w-8 h-8 object-contain;
+    max-width: 2rem;
+    max-height: 2rem;
   }
 </style>
-
 
 
 
