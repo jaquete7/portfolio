@@ -3,43 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guillermo Jaquete – Portfolio</title>
+  <title>Guillermo Jaquete – Developer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Figtree', sans-serif; }
   </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen flex flex-col">
+<body class="bg-gray-950 text-white min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="w-full p-4 sticky top-0 bg-gray-950 border-b border-gray-800 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span class="text-xl font-bold text-blue-400">Guillermo</span>
+      <nav class="space-x-4 text-sm text-gray-300">
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Hero -->
-  <section class="flex-1 flex items-center justify-center text-center px-6">
+  <section class="flex-1 flex items-center justify-center px-6 py-20 text-center bg-gradient-to-br from-gray-900 via-black to-gray-900">
     <div>
-      <h1 class="text-4xl sm:text-6xl font-bold mb-4">Hi, I'm Guillermo</h1>
-      <p class="text-lg sm:text-xl text-gray-300 max-w-xl mx-auto mb-6">Front-End Developer crafting modern, responsive web experiences using Tailwind CSS, JavaScript, and React.</p>
-      <a href="#projects" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">See My Work</a>
+      <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400 animate-pulse">
+        Hello, I’m Guillermo
+      </h1>
+      <p class="text-gray-300 max-w-2xl mx-auto text-lg">A frontend developer who builds sleek, fast, and user-focused web experiences. I use HTML, Tailwind CSS, JavaScript, and React.</p>
+      <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition">
+        Explore My Projects
+      </a>
     </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-4 text-blue-400">About Me</h2>
+    <p class="text-gray-300 text-lg">I’m a self-taught developer who loves turning creative ideas into real products. I specialize in modern, responsive design and am always learning something new. My goal is to make the web more useful and beautiful, one site at a time.</p>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="px-6 py-12 bg-gray-950 border-t border-gray-800">
-    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <!-- Project 1 -->
-      <div class="bg-gray-800 p-5 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">Project One</h3>
-        <p class="text-gray-400 mb-3 text-sm">A cool thing I built using HTML, Tailwind, and magic.</p>
-        <a href="#" class="text-blue-400 hover:underline text-sm">Live Demo →</a>
+  <section id="projects" class="bg-gray-900 px-6 py-16">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-blue-400">Projects</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-5 rounded-lg hover:scale-[1.02] transition transform">
+          <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+          <p class="text-gray-400 text-sm mb-3">An awesome app that solves a real problem. Built with React and Tailwind.</p>
+          <a href="#" class="text-blue-400 hover:underline text-sm">View Demo →</a>
+        </div>
+        <div class="bg-gray-800 p-5 rounded-lg hover:scale-[1.02] transition transform">
+          <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+          <p class="text-gray-400 text-sm mb-3">A modern landing page design for a startup, responsive and clean.</p>
+          <a href="#" class="text-blue-400 hover:underline text-sm">View Demo →</a>
+        </div>
+        <div class="bg-gray-800 p-5 rounded-lg hover:scale-[1.02] transition transform">
+          <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+          <p class="text-gray-400 text-sm mb-3">Portfolio site made from scratch with no frameworks — just HTML and Tailwind.</p>
+          <a href="#" class="text-blue-400 hover:underline text-sm">View Demo →</a>
+        </div>
       </div>
-      <!-- Add more projects -->
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-blue-400">Get in Touch</h2>
+    <p class="text-gray-300 mb-6">If you're interested in working together, or just want to say hi — feel free to reach out!</p>
+    <a href="mailto:you@example.com" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition">Send Email</a>
+  </section>
+
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 py-6 mt-auto border-t border-gray-800">
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-800 mt-auto">
     &copy; <span id="year"></span> Guillermo Jaquete. Built with ❤️ and Tailwind CSS.
   </footer>
 
@@ -49,4 +86,3 @@
 
 </body>
 </html>
-
