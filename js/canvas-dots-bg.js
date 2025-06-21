@@ -18,10 +18,10 @@ const canvasDotsBg = function () {
   ctx.lineWidth = 0.3;
   ctx.strokeStyle = color;
 
-  let mousePosition = {
-    x: (30 * canvas.width) / 100,
-    y: (30 * canvas.height) / 100,
-  };
+ let mousePosition = {
+  x: canvas.width / 2,
+  y: canvas.height / 2,
+};
 
   const windowSize = window.innerWidth;
   let dots;
