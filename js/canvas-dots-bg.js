@@ -134,8 +134,8 @@ let distanceRatio = dotDistance / (windowSize / 2);
 
 // Always keep dots at least 20% visible
 let opacity = 1 - distanceRatio;
-if (isNaN(opacity) || opacity < 0.8) {
-  opacity = 0.8;
+if (isNaN(opacity) || opacity < 0.5) {
+  opacity = 0.5;
 }
 
 ctx.fillStyle = this.colour.slice(0, -1) + `,${opacity})`;
