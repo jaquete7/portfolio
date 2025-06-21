@@ -255,6 +255,7 @@ ctx.fillStyle = this.colour.slice(0, -1) + `,${opacity})`;
   // mousePosition.y = window.innerHeight / 2;
 
   const draw = setInterval(createDots, 1000 / 30);
+  createDots();
 
   window.onresize = function () {
     clearInterval(draw);
