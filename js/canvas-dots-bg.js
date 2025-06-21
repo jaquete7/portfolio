@@ -42,7 +42,7 @@ const canvasDotsBg = function () {
     };
   } else if (windowSize > 1100) {
     dots = {
-      nb: 75,
+      nb: 50,
       distance: 0,
       d_radius: 0,
       array: [],
@@ -54,7 +54,7 @@ const canvasDotsBg = function () {
       d_radius: 0,
       array: [],
     };
-    ctx.globalAlpha = 0;
+    //ctx.globalAlpha = 0;
   } else if (windowSize > 600) {
     dots = {
       nb: 50,
@@ -125,15 +125,20 @@ const canvasDotsBg = function () {
 
       // make the dot colour fade out the further they are from the mouse
 
-      const dotDistance =
-        ((this.x - mousePosition.x) ** 2 +
-          (this.y - mousePosition.y + top) ** 2) **
-        0.5;
-      const distanceRatio = dotDistance / (windowSize / 2);
+    const dotDistance =
+  ((this.x - mousePosition.x) ** 2 +
+    (this.y - mousePosition.y + top) ** 2) **
+  0.5;
 
-      // this chops the bracket off the rgb colour and ads an opacity
-      ctx.fillStyle = this.colour.slice(0, -1) + `,${1 - distanceRatio})`;
-      // ctx.fillStyle = this.colour;
+let distanceRatio = dotDistance / (windowSize / 2);
+
+// Always keep dots at least 20% visible
+let opacity = 1 - distanceRatio;
+if (isNaN(opacity) || opacity < 0.2) {
+  opacity = 0.2;
+}
+
+ctx.fillStyle = this.colour.slice(0, -1) + `,${opacity})`;
 
       ctx.fill();
     },
