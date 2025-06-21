@@ -197,6 +197,16 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  
+  <script src="js/canvas-bg.js"></script>
+  
+  <script>
+  import canvasDotsBg from './js/canvasDotsBg.js';
+  document.addEventListener('DOMContentLoaded', () => {
+    canvasDotsBg();
+  });
+</script>
+
 
 </body>
 </html>
