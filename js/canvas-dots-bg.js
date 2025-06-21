@@ -259,4 +259,5 @@ const canvasDotsBg = function () {
   };
 };
 
-export default canvasDotsBg;
+window.addEventListener('load', canvasDotsBg);
+
