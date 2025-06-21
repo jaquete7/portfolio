@@ -63,7 +63,7 @@ const canvasDotsBg = function () {
       array: [],
     };
 
-    ctx.globalAlpha = 0;
+    //ctx.globalAlpha = 0;
   } else {
     dots = {
       nb: 1,
@@ -72,7 +72,7 @@ const canvasDotsBg = function () {
       array: [],
     };
 
-    ctx.globalAlpha = 0;
+    //ctx.globalAlpha = 0;
   }
 
   // decided to turn off connecting dots under 1100px
