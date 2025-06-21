@@ -42,7 +42,7 @@ const canvasDotsBg = function () {
     };
   } else if (windowSize > 1100) {
     dots = {
-      nb: 50,
+      nb: 75,
       distance: 0,
       d_radius: 0,
       array: [],
