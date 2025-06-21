@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guillermo Jaquete – Developer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Figtree', sans-serif; }
+    .glow:hover {
+      box-shadow: 0 0 10px #38bdf8, 0 0 20px #2dd4bf, 0 0 30px #0ea5e9;
+    }
   </style>
 </head>
 <body class="bg-gray-950 text-white min-h-screen flex flex-col">
@@ -26,155 +30,50 @@
   </header>
 
   <!-- Hero -->
-<section class="flex-1 flex items-center justify-center px-6 py-20 text-center bg-gradient-to-br from-gray-900 via-black to-gray-900">
-  <div>
-    <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
-      Guillermo Jaquete
-    </h1>
-    <p class="text-gray-300 max-w-2xl mx-auto text-lg mb-4 sm:mb-8">
-      Full-Stack Developer | React Specialist
-    </p>
-    <p class="text-gray-300 max-w-2xl mx-auto text-lg">
-      I specialize in crafting responsive, mobile-first, accessible, and SEO-optimized web applications using React, Tailwind CSS, WordPress, and a variety of modern frameworks and libraries.
-    </p>
-    <a href="https://www.zendrop.com/home-2/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block px-6 py-3 transition bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-700 hover:to-teal-700  text-white rounded-md font-medium animate-pulse">
-      Explore My Latest Project
-    </a>
-  </div>
-</section>
-
-  <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto px-6 py-16">
-    <h2 class="text-3xl font-bold mb-8 text-center">About Me<span class="text-blue-400">_</span></h2>
-    <p class="text-gray-300 text-lg">I’m a Full-Stack Developer with over 3 years of experience building responsive, high-performance web interfaces using modern technologies like React, JavaScript, HTML, CSS, and Tailwind CSS.
-    I specialize in translating high-fidelity designs into pixel-perfect layouts, optimizing SEO and performance, and ensuring accessibility and cross-browser compatibility.
-    I’ve contributed to e-commerce and SaaS platforms, collaborated with design and backend teams, and thrive in agile environments where clean, scalable code and exceptional user experiences are key.</p>
+  <section class="flex-1 flex items-center justify-center px-6 py-20 text-center bg-gradient-to-br from-gray-900 via-black to-gray-900">
+    <div>
+      <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
+        Guillermo Jaquete
+      </h1>
+      <p id="typed" class="text-lg sm:text-xl text-gray-300 mb-6 h-6"></p>
+      <p class="text-gray-400 max-w-xl mx-auto text-lg">
+        I build responsive, SEO-optimized, accessible UIs using React, Tailwind CSS, WordPress & modern stacks.
+      </p>
+      <a href="https://www.zendrop.com/home-2/" target="_blank" class="mt-6 inline-block px-6 py-3 transition bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-700 hover:to-teal-700  text-white rounded-md font-medium animate-pulse glow">
+        Explore My Latest Project
+      </a>
+    </div>
   </section>
 
-<!-- Skills as Cards by Category -->
-<section id="skills" class="bg-black text-white">
-  <div class="px-6 py-16 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center">Skills<span class="text-blue-400">_</span></h2>
-
-    <!-- Front End -->
-    <h3 class="text-2xl font-semibold mb-4 mt-8">Front End</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">HTML</span>
-      </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">CSS</span>
-      </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">JavaScript</span>
-      </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">WordPress</span>
-      </div>
-     <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-      <span class="text-lg">React</span>
-    </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">Tailwind CSS</span>
-      </div>
-    </div>
-
-    <!-- Back End -->
-    <h3 class="text-2xl font-semibold mb-4 mt-10">Back End</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-    
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">PHP</span>
-      </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">SQL</span>
-      </div>
-        <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">Node.js</span>
-      </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">Python</span>
-      </div>
-    
-    </div>
-
-    <!-- Design -->
-    <h3 class="text-2xl font-semibold mb-4 mt-10">Design</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">Figma</span>
-      </div>   
-    </div>
-
-    <!-- General -->
-    <h3 class="text-2xl font-semibold mb-4 mt-10">General</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">Git</span>
-      </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="OOP" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-        <span class="text-lg">Object Oriented Programming</span>
-      </div>
-     <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-      <span class="text-lg">TypeScript</span>
-    </div>
-      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
-      <span class="text-lg">Redux</span>
-    </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Skill card styles -->
-<style>
-  .skill-card {
-    @apply bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition;
-  }
-  .skill-card img {
-    @apply w-8 h-8 sm:w-15 sm:h-15 object-contain;
-    max-width: 3rem;
-    max-height: 3rem;
-  }
-</style>
-
-
+  <!-- Avatar Section -->
+  <section class="text-center py-16">
+    <img src="your-cartoon-avatar.png" alt="Cartoon avatar" class="w-32 h-32 mx-auto rounded-full animate-bounce mb-4" />
+    <h2 class="text-2xl font-bold">Hi, I'm Guillermo</h2>
+    <p class="text-gray-400 max-w-xl mx-auto mt-2">A curious full-stack developer with a thing for clean UIs and elegant solutions.</p>
+  </section>
 
   <!-- Projects -->
   <section id="projects" class="bg-gray-900 px-6 py-16">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-center">Projects<span class="text-blue-400">_</span></h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-5 rounded-lg hover:scale-[1.02] transition transform">
+        <!-- Card 1 -->
+        <div class="bg-gray-800 p-5 rounded-lg transition transform hover:scale-105 hover:shadow-2xl hover:ring-2 ring-blue-400">
           <h3 class="text-xl font-semibold mb-2">E-commerce Pricing System</h3>
-          <p class="text-gray-400 text-sm ">Developed Zendrop’s responsive pricing page using HTML, CSS, JS, PHP, Tailwind CSS, and WordPress. Translated Figma designs into pixel-perfect code, implemented dynamic pricing toggles, ensured accessibility and mobile-first responsiveness, and optimized layout for SEO and fast load times.</p>
-          <a href="https://www.zendrop.com/pricing/" class="inline-flex mt-3 px-6 py-3 text-sm max-w-[]transition bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-700 hover:to-teal-700  text-white rounded-md ">View Demo  →</a>  
+          <p class="text-gray-400 text-sm">Developed Zendrop’s pricing UI in WordPress + Tailwind. Fast, SEO optimized, fully responsive.</p>
+          <a href="https://www.zendrop.com/pricing/" class="inline-block mt-4 text-sm font-medium text-blue-400 hover:text-teal-400">View Demo →</a>
         </div>
-        <div class="bg-gray-800 p-5 rounded-lg hover:scale-[1.02] transition transform">
-          <h3 class="text-xl font-semibold mb-2">Home Page / Hero</h3>
-          <p class="text-gray-400 text-sm">  Built the modern homepage — viewed by hundreds of thousands of users — using React, Tailwind CSS, TypeScript, and WordPress. Focused on performance, responsive layout, and conversion-optimized design. Implemented hero sections, feature highlights, testimonials, and CTAs based on Figma designs, while ensuring accessibility and SEO best practices across devices.</p>
-          <a href="https://www.zendrop.com/home-2/" class="inline-flex mt-3 px-6 py-3 text-sm max-w-[]transition bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-700 hover:to-teal-700  text-white rounded-md">View Demo →</a>
+        <!-- Card 2 -->
+        <div class="bg-gray-800 p-5 rounded-lg transition transform hover:scale-105 hover:shadow-2xl hover:ring-2 ring-blue-400">
+          <h3 class="text-xl font-semibold mb-2">Modern Homepage</h3>
+          <p class="text-gray-400 text-sm">Built high-traffic landing page using React, TS, Tailwind & WP. Conversion-focused UX.</p>
+          <a href="https://www.zendrop.com/home-2/" class="inline-block mt-4 text-sm font-medium text-blue-400 hover:text-teal-400">View Demo →</a>
         </div>
-        <div class="bg-gray-800 p-5 rounded-lg hover:scale-[1.02] transition transform">
+        <!-- Card 3 -->
+        <div class="bg-gray-800 p-5 rounded-lg transition transform hover:scale-105 hover:shadow-2xl hover:ring-2 ring-blue-400">
           <h3 class="text-xl font-semibold mb-2">Secure Login</h3>
-          <p class="text-gray-400 text-sm">  Developed the secure and responsive login page for Zendrop’s user dashboard using HTML, CSS, JS, PHP and Tailwind CSS. Prioritized intuitive UX, fast load times, and mobile accessibility while maintaining consistent branding. Integrated with authentication logic to support a smooth and scalable login experience.
-</p>
-          <a href="https://account.zendrop.com/login" class="inline-flex mt-3 px-6 py-3 text-sm transition bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-700 hover:to-teal-700  text-white rounded-md">View Demo →</a>
+          <p class="text-gray-400 text-sm">Login page w/ fast loading, clean code, mobile first, scalable auth-ready design.</p>
+          <a href="https://account.zendrop.com/login" class="inline-block mt-4 text-sm font-medium text-blue-400 hover:text-teal-400">View Demo →</a>
         </div>
       </div>
     </div>
@@ -183,16 +82,21 @@
   <!-- Contact -->
   <section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
     <h2 class="text-3xl font-bold mb-8">Get in Touch<span class="text-blue-400">_</span></h2>
-    <p class="text-gray-300 mb-6">If you're interested in working together, or have any questions — feel free to reach out!</p>
+    <p class="text-gray-300 mb-6">Want to build something cool? Or just curious to say hey?</p>
     <a href="mailto:guillermojaquete@gmail.com" class="inline-block px-6 py-3 transition bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-700 hover:to-teal-700  text-white rounded-md font-medium">Send Email</a>
   </section>
 
-  <!-- Footer -->
   <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-800 mt-auto">
     &copy; <span id="year"></span> Guillermo Jaquete.
   </footer>
 
   <script>
+    new Typed('#typed', {
+      strings: ['Full‑Stack Developer', 'React Specialist', 'UI/UX Fanatic'],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
