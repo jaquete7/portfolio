@@ -49,7 +49,7 @@ const canvasDotsBg = function () {
     };
   } else if (windowSize > 800) {
     dots = {
-      nb: 1,
+      nb: 50,
       distance: 0,
       d_radius: 0,
       array: [],
@@ -57,7 +57,7 @@ const canvasDotsBg = function () {
     ctx.globalAlpha = 0;
   } else if (windowSize > 600) {
     dots = {
-      nb: 1,
+      nb: 50,
       distance: 0,
       d_radius: 0,
       array: [],
@@ -66,7 +66,7 @@ const canvasDotsBg = function () {
     //ctx.globalAlpha = 0;
   } else {
     dots = {
-      nb: 1,
+      nb: 50,
       distance: 0,
       d_radius: 0,
       array: [],
