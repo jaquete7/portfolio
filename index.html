@@ -18,6 +18,42 @@
       //color: #38bdf8; /* optional: match your accent color */
     }
   </style>
+  .gradient-border-item {
+  /* Inherit some base styles from Tailwind or define them here */
+  position: relative; /* Needed for absolute positioning if you add pseudo-elements later */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px; /* You might want to adjust these sizes based on your design */
+  width: 160px; /* You might want to adjust these sizes based on your design */
+
+  /* The actual gradient border properties */
+  border: double 3px transparent;
+  border-image-slice: 1; /* This is key for the gradient border */
+  border-width: 3px;
+  background-image: linear-gradient(#1a1a1a, #1a1a1a),
+    radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: content-box, border-box; /* This creates the border effect */
+  transition: transform 0.2s, opacity 1.2s; /* Apply transitions */
+  overflow: hidden; /* Important for content not to spill over border-radius */
+
+  /* For the fade-in effect if you want it */
+  opacity: 0;
+}
+
+/* Example of animation for fade-in (if you use it) */
+.skills-fade-in {
+  animation: fadeIn 1.2s forwards; /* Match the opacity transition duration */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 </head>
 <body class="bg-gray-950 text-white min-h-screen flex flex-col">
   <canvas class="canvas-2 fixed top-0 left-0 w-full h-full z-50 pointer-events-none"></canvas>
@@ -71,7 +107,36 @@
     <!-- Front End -->
     <h3 class="text-2xl font-semibold mb-4 mt-8">Front End</h3>
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 gradient-border-item shadow hover:shadow-lg skills-fade-in" style="animation-delay: 0.1s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
+        <span class="text-lg">HTML</span>
+      </div>
       <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
+        <span class="text-lg">CSS</span>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
+        <span class="text-lg">JavaScript</span>
+      </div>
+      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
+        <span class="text-lg">WordPress</span>
+      </div>
+     <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
+      <span class="text-lg">React</span>
+    </div>
+      <div class="bg-gray-900 rounded-lg p-5 flex flex-col items-center justify-center text-center gap-2 shadow hover:shadow-lg transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
+        <span class="text-lg">Tailwind CSS</span>
+      </div>
+    </div>
+
+     <!-- Front End Test-->
+    <h3 class="text-2xl font-semibold mb-4 mt-8">Front End</h3>
+    <div class="flex flex-col items-center">
+      <div class="flex flex-wrap justify-center gap-6 mb-6">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" style="max-width: 2.5rem; max-height: 2.5rem;" />
         <span class="text-lg">HTML</span>
       </div>
