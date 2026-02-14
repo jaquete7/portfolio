@@ -101,7 +101,10 @@
     100% { transform: translateX(-50%); }
   }
   .carousel-track {
+    display: inline-flex;
+    width: max-content;
     animation: marquee 25s linear infinite;
+    will-change: transform;
   }
   .carousel-track:hover {
     animation-play-state: paused;
@@ -176,7 +179,7 @@
   </header>
 
   <!-- Hero -->
-<section class="min-h-[80vh] flex items-center px-[11rem] py-8 md:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+<section class="min-h-0 md:min-h-[80vh] flex items-center px-6 md:px-[11rem] py-8 md:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900">
   <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-8 md:gap-10">
     <div class="text-center md:text-left md:flex-1 md:min-w-0 md:max-w-xl">
       <h1 class="text-4xl sm:text-6xl font-extrabold mb-4">
@@ -192,7 +195,7 @@
           Let's Work Together <span aria-hidden="true" class="inline-flex items-center">→</span>
         </a>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center justify-center md:justify-start gap-4">
         <a href="https://linkedin.com/in/guillermo-jaquete" target="_blank" rel="noopener noreferrer" class="opacity-70 hover:opacity-100 transition-opacity text-gray-400 hover:text-white" aria-label="LinkedIn">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
@@ -218,12 +221,12 @@
     </div>
     <div class="flex flex-col justify-center items-center md:items-end gap-6 md:flex-shrink-0 md:ml-auto">
       <p class="text-xs text-gray-400 uppercase tracking-wide">Worked with</p>
-      <div class="flex flex-col justify-center md:items-end gap-6 items-center">
+      <div class="flex flex-col justify-center md:items-end gap-2 md:gap-6 items-center">
         <a href="https://www.hostaway.com" target="_blank" rel="noopener noreferrer" class="opacity-80 hover:opacity-100 transition-opacity">
-          <img src="images/logos/hostaway-logo.svg" alt="Hostaway" class="h-10 md:h-12 w-auto object-contain">
+          <img src="images/logos/hostaway-logo.svg" alt="Hostaway" class="h-7 md:h-12 w-auto object-contain">
         </a>
         <a href="https://www.zendrop.com" target="_blank" rel="noopener noreferrer" class="opacity-80 hover:opacity-100 transition-opacity flex items-center">
-          <img src="images/logos/zendrop-logo.png" alt="Zendrop" class="h-10 md:h-12 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling?.classList.remove('hidden')">
+          <img src="images/logos/zendrop-logo.png" alt="Zendrop" class="h-7 md:h-12 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling?.classList.remove('hidden')">
           <span class="hidden text-lg font-bold text-gray-300">Zendrop</span>
         </a>
       </div>
@@ -267,25 +270,25 @@
         </div>
       </div>
     </div>
-    <h3 class="text-xl font-semibold text-white mb-8 mt-16 text-center">Marketing & Growth</h3>
+    <h3 class="text-xl font-semibold text-white mb-5 md:mb-8 mt-16 text-center">Marketing & Growth</h3>
     <div class="w-screen relative left-1/2 -ml-[50vw] overflow-hidden">
-      <div class="carousel-track flex gap-6">
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">VWO (A/B Testing)</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">Core Web Vitals</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">SEMrush</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">SEO</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">PageSpeed Insights</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">Google Analytics</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">Google Tag Manager</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">WCAG / Accessibility</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">VWO (A/B Testing)</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">Core Web Vitals</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">SEMrush</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">SEO</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">PageSpeed Insights</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">Google Analytics</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">Google Tag Manager</span></span>
-        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-6 py-3 text-sm">WCAG / Accessibility</span></span>
+      <div class="carousel-track flex gap-4 md:gap-6">
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">VWO (A/B Testing)</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">Core Web Vitals</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">SEMrush</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">SEO</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">PageSpeed Insights</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">Google Analytics</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">Google Tag Manager</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">WCAG / Accessibility</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">VWO (A/B Testing)</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">Core Web Vitals</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">SEMrush</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">SEO</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">PageSpeed Insights</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">Google Analytics</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">Google Tag Manager</span></span>
+        <span class="gradient-border-item inline-flex p-0 whitespace-nowrap flex-shrink-0"><span class="gradient-border-inner px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm">WCAG / Accessibility</span></span>
       </div>
     </div>
   </section>
@@ -293,7 +296,10 @@
 <!-- Skill card styles -->
 <style>
   @media (prefers-reduced-motion: no-preference) {
-    .carousel-track { animation: marquee 20s linear infinite; }
+    .carousel-track { animation: marquee 35s linear infinite; }
+  }
+  @media (max-width: 768px) and (prefers-reduced-motion: no-preference) {
+    .carousel-track { animation: marquee 25s linear infinite; }
   }
   @media (prefers-reduced-motion: reduce) {
     .carousel-track { animation: none; }
@@ -311,7 +317,7 @@
 
 
   <!-- Selected Work -->
-  <section id="selected-work" class="bg-gray-900 px-[11rem] py-8 md:py-16">
+  <section id="selected-work" class="bg-gray-900 px-6 md:px-[11rem] py-8 md:py-16">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-center">Selected Work<span class="text-blue-400 blink-cursor">_</span></h2>
 
